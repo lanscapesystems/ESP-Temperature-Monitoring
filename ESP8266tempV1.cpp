@@ -133,6 +133,6 @@ void loop(void) {
   steinhart = steinhart * 9;
   steinhart = steinhart + 32;
   dtostrf(steinhart, 6, 0, tempdat);
-  client.publish(topic, tempdat);     //publish the temperature in degrees Celcius to "topic"
+  client.publish(topic, tempdat);     //publish the temperature in degrees Farenheit to "topic"
   delay(5000);
   }
